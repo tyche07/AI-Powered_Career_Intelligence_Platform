@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareerCompass | Career Intelligence</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="/"><span class="brand-mark"><i class="bi bi-compass-fill"></i></span><span><strong>CareerCompass</strong><small>Career Intelligence</small></span></a>
+    <a class="btn new-chat" href="#career-chat"><i class="bi bi-plus-lg me-2"></i>New career chat</a>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="/" data-page="Home"><i class="bi bi-house-door"></i>Dashboard</a>
+      <a class="nav-link" href="/pages/insights.html"><i class="bi bi-stars"></i>Career insights</a>
+      <div class="nav-heading">MY CAREER</div>
+      <a class="nav-link" href="/pages/profile.html"><i class="bi bi-person-vcard"></i>Career profile</a>
+      <a class="nav-link" href="/pages/recommendations.html"><i class="bi bi-signpost-split"></i>Career matches</a>
+      <a class="nav-link" href="/pages/skills.html"><i class="bi bi-bar-chart-line"></i>Skill analysis</a>
+      <a class="nav-link" href="/pages/learning.html"><i class="bi bi-journal-bookmark"></i>Learning roadmap</a>
+      <a class="nav-link" href="/pages/opportunities.html"><i class="bi bi-briefcase"></i>Opportunities</a>
+      <a class="nav-link" href="/pages/goals.html"><i class="bi bi-bullseye"></i>Goals & progress</a>
+    </nav>
+    <div class="recent-chats"><div class="nav-heading">QUICK START</div>
+      <button class="recent-item" data-prompt="Help me explore career paths based on my interests.">Explore career paths</button>
+      <button class="recent-item" data-prompt="How can I identify my skill gaps?">Identify skill gaps</button>
+      <button class="recent-item" data-prompt="Help me make a learning roadmap.">Build a learning roadmap</button>
+    </div>
+    <div class="user-profile"><div class="avatar">G</div><div class="user-copy"><strong>Guest User</strong><small>Personal career space</small></div><span class="profile-gear"><i class="bi bi-gear"></i></span></div>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" id="mobileMenu" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      <div><h1>Good day, future achiever <span class="wave">👋</span></h1><p>Small steps today can shape your career tomorrow.</p></div>
+      <button class="notification-button" id="notifications" aria-label="Notifications"><i class="bi bi-bell"></i></button>
+    </header>
+
+    <section class="hero-card">
+      <div class="hero-copy">
+        <span class="eyebrow"><i class="bi bi-stars me-1"></i>Your AI career companion</span>
+        <h2>Find your direction. Build your future.</h2>
+        <p>Explore career paths, understand your skill gaps, and plan your next learning steps — all in one place.</p>
+        <a class="btn primary-button" href="/pages/profile.html">Build my career profile <i class="bi bi-arrow-right ms-2"></i></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="career-icon"><i class="bi bi-signpost-split"></i></div><span class="float-bubble bubble-star"><i class="bi bi-stars"></i></span><span class="float-bubble bubble-check"><i class="bi bi-check-lg"></i></span></div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading"><h3>Your career toolkit</h3><a href="/pages/insights.html" class="see-all">Explore all</a></div>
+      <div class="toolkit-grid">
+        <a href="/pages/profile.html" class="tool-item"><span class="tool-icon mint"><i class="bi bi-person-vcard"></i></span><span>Profile</span></a>
+        <a href="/pages/recommendations.html" class="tool-item"><span class="tool-icon pink"><i class="bi bi-signpost-split"></i></span><span>Career matches</span></a>
+        <a href="/pages/skills.html" class="tool-item"><span class="tool-icon lavender"><i class="bi bi-bar-chart-line"></i></span><span>Skills</span></a>
+        <a href="/pages/learning.html" class="tool-item"><span class="tool-icon peach"><i class="bi bi-journal-bookmark"></i></span><span>Learning</span></a>
+        <a href="/pages/opportunities.html" class="tool-item"><span class="tool-icon yellow"><i class="bi bi-briefcase"></i></span><span>Opportunities</span></a>
+        <a href="/pages/goals.html" class="tool-item"><span class="tool-icon blue"><i class="bi bi-bullseye"></i></span><span>Goals</span></a>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading"><h3>At a glance</h3><a href="/pages/profile.html" class="see-all">View profile</a></div>
+      <div class="row g-3">
+        <div class="col-md-4"><article class="summary-card"><div class="summary-top"><span class="summary-icon mint"><i class="bi bi-person-check"></i></span><span class="mini-tag">GET STARTED</span></div><span class="card-label">Career profile</span><h4 id="profileStatus">Ready to begin</h4><p>Add your interests and strengths to personalize your exploration.</p><a href="/pages/profile.html" class="text-action">Complete profile <i class="bi bi-arrow-right"></i></a></article></div>
+        <div class="col-md-4"><article class="summary-card"><div class="summary-top"><span class="summary-icon lavender"><i class="bi bi-lightbulb"></i></span><span class="mini-tag">EXPLORE</span></div><span class="card-label">Career matches</span><h4 id="matchCount">6 sample paths</h4><p>Explore career ideas and compare their typical skill areas.</p><a href="/pages/recommendations.html" class="text-action">Explore careers <i class="bi bi-arrow-right"></i></a></article></div>
+        <div class="col-md-4"><article class="summary-card"><div class="summary-top"><span class="summary-icon peach"><i class="bi bi-flag"></i></span><span class="mini-tag">YOUR NEXT STEP</span></div><span class="card-label">Learning goals</span><h4 id="goalCount">0 goals added</h4><p>Turn your interests into manageable learning milestones.</p><a href="/pages/goals.html" class="text-action">Set a goal <i class="bi bi-arrow-right"></i></a></article></div>
+      </div>
+    </section>
+
+    <section class="chat-panel" id="career-chat">
+      <div class="chat-title"><div><span class="chat-label"><i class="bi bi-stars me-1"></i>Career assistant</span><h3>What would you like to figure out?</h3></div><span class="online-dot">Demo mode</span></div>
+      <div class="chat-messages" id="chatMessages"><p class="assistant-message">Hi! I can help you organize career questions, explore possible paths, and plan skill development. Tell me what you’re interested in.</p></div>
+      <div class="prompt-chips"><button data-prompt="I am not sure which career path suits me.">Find my direction</button><button data-prompt="Suggest skills to learn for an entry-level role.">Skills to learn</button><button data-prompt="Help me prepare a 30-day learning plan.">30-day plan</button></div>
+      <form id="chatForm" class="chat-form"><label for="chatInput" class="visually-hidden">Ask a career question</label><textarea id="chatInput" rows="2" placeholder="Ask about career paths, skills, or learning plans..." required></textarea><button class="send-button" type="submit" aria-label="Send message"><i class="bi bi-arrow-up"></i></button></form>
+      <div class="safety-note"><i class="bi bi-info-circle me-1"></i>Suggestions are general guidance. Verify requirements with current course and job sources.</div>
+    </section>
+    <footer>Designed for your next step <span>•</span> CareerCompass demo</footer>
+  </main>
+</div>
+<div class="toast-container position-fixed top-0 end-0 p-3"><div id="appToast" class="toast" role="status"><div class="toast-body"><i class="bi bi-check-circle-fill text-success me-2"></i><span id="toastText">Done</span></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="/static/script.js"></script>
+</body></html>
